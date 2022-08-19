@@ -15,6 +15,11 @@
             </a>
         </h3>
         <h3>
+            <a href="#experience">
+                EXPERIENCE
+            </a>
+        </h3>
+        <h3>
             <a href="#education">
                 EDUCATION
             </a>
@@ -29,11 +34,7 @@
                 PROJECTS
             </a>
         </h3>
-        <h3>
-            <a href="#experience">
-                EXPERIENCE
-            </a>
-        </h3>
+
     </div>
     <content>
         <div id="header">
@@ -75,9 +76,16 @@
                 </div>
             </div>
             <hr>
-            <a href="files/Resume.pdf">
-                <h3 id="resume">Resume</h3>
-            </a>
+            <form action="/files/Resume.pdf">
+                <button class="button" style="vertical-align:middle">
+                    <span>
+                        Resume
+                    </span>
+                </button>
+            </form>
+<!--            <a href="files/Resume.pdf">-->
+<!--                <h3 id="resume">Resume</h3>-->
+<!--            </a>-->
         </div>
         <div>
             <div class="section-panel">
@@ -89,8 +97,9 @@
                     </div>
                     <div class="section-content">
                         <p>
-                            I'm a Computer Science student at the University of British Columbia completing second
-                            degree program.
+                            I'm a Computer Science student completing second degree program at the University of
+                            British Columbia. I am pursuing a career in software development. I like creating tools that
+                            make life easier.
                             <br>
                             <br>
                             I have a BSc. in Combined Biochemistry and Chemistry. While in trying to get a Genetics
@@ -99,7 +108,7 @@
                             oppurtunity to dabble a little in Cheminformatics, finally able to write scripts.
                             <br>
                             <br>
-                            I am interested in Computer Systems and am currently particularly interested in and in
+                            I am interested in Computer Systems and am currently particularly interested in
                             learning about Cybersecurity.
                             <br>
                             <br>
@@ -108,28 +117,6 @@
                     </div>
                 </div>
 
-                <div class="section" id="education">
-                    <div class="section-header">
-                        <h3>EDUCATION</h3>
-                        <hr>
-                    </div>
-                    <div class="section-content">
-                        <div class="item">
-                            <b class="left-item">Bachelor of Computer Science</b>
-                            <b class="right-item">Sep 2021 – May 2024</b>
-                            <br>
-                            <i class="left-item">University of British Columbia</i>
-                            <i class="right-item">Vancouver, BC</i>
-                        </div>
-                        <div>
-                            <b class="left-item">BSc. Combined Biochemistry and Chemistry</b>
-                            <b class="right-item">Sep 2015 – May 2020</b>
-                            <br>
-                            <i class="left-item">University of British Columbia</i>
-                            <i class="right-item">Vancouver, BC</i>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="section" id="skills">
                     <div class="section-header">
@@ -151,6 +138,42 @@
                     </div>
                 </div>
 
+                <div class="section" id="experience">
+                    <div class="section-header">
+                        <h3>EXPERIENCE</h3>
+                        <hr>
+                    </div>
+                    <div class="section-content">
+                        <div class="item">
+                            <b class="left-item">Incoming Software Development Co-op</b>
+                            <b class="right-item">Sep 2022 – Apr 2023</b>
+                            <br>
+                            <i class="left-item">Alida</i>
+                            <i class="right-item">Vancouver, BC</i>
+                            <ul>
+                                <li>
+                                    Will contribute to full-stack development, utilizing JavaScript UI frameworks,
+                                    databases,
+                                    and
+                                    AWS services.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <b class="left-item">Lead Tutorial Teaching Assistant, Models of Computation</b>
+                            <b class="right-item">Jan 2022 – Aug 2022</b>
+                            <br>
+                            <i class="left-item">University of British Columbia</i>
+                            <i class="right-item">Vancouver, BC</i>
+                            <ul>
+                                <li>
+                                    I love teaching tutorial
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section" id="projects">
                     <div class="section-header">
                         <h3>PROJECTS</h3>
@@ -167,9 +190,11 @@
                             <a href="/dvd-screen-simulator">
                                 <div class="gradient" style="background-image:
                             linear-gradient(to bottom, rgba(227,227,227,0), rgb(38,38,38)),
-                            url('');">
+                            url('images/dvd-screen-simulator.png');">
                                     <div class="gradient-text">
-                                        text
+                                        Simulates the classic movement of the DVD logo inside your web browser window.
+                                        Upload your own custom logo and customize your background. Logo size can be
+                                        adjusted, along with speed, and trajectory.
                                     </div>
                                 </div>
                             </a>
@@ -203,7 +228,7 @@
                             linear-gradient(to bottom, rgba(227,227,227,0), rgb(38,38,38)),
                             url('');">
                                 <div class="gradient-text">
-                                    text
+                                    A website for posting odd-jobs for your community vicinity.
                                 </div>
                             </div>
                         </div>
@@ -218,8 +243,8 @@
                             linear-gradient(to bottom, rgba(227,227,227,0), rgb(38,38,38)),
                             url('images/lptp.png');">
                                 <div class="gradient-text">
-                                    A simple powerlifting training progress tracker, that prescribes new weights in
-                                    accordance with linear progression methods.
+                                    A simple powerlifting training progress tracker that saves, loads, and prescribes
+                                    new weights in accordance with a linear progression training protocol.
                                 </div>
                             </div>
                         </div>
@@ -232,11 +257,11 @@
                             <b class="right-item">Oct 2021 – Nov 2021</b>
                             <div class="gradient" style="background-image:
                             linear-gradient(to bottom, rgba(227,227,227,0), rgb(38,38,38)),
-                            url('images/conformer-counter.png');">
+                            url('images/conformer-counter2.png');">
                                 <div class="gradient-text">
-                                    An analysis tool that determines the conformation of cyclohexane molecules presented
-                                    in .gro file format. Uses graph traversal with vector calculations to discern the
-                                    axial from equatorial conformers. Used to validate Gromacs simulations.
+                                    An analysis tool that determines the ratio of conformers in cyclohexane molecules
+                                    presented in .gro file format. Uses graph traversal with vector calculations to
+                                    discern the axial from equatorial conformers. Used to validate Gromacs simulations.
                                 </div>
                             </div>
                         </div>
@@ -261,56 +286,35 @@
                     </div>
                 </div>
 
-                <div class="section" id="experience">
+                <div class="section" id="education">
                     <div class="section-header">
-                        <h3>EXPERIENCE</h3>
+                        <h3>EDUCATION</h3>
                         <hr>
                     </div>
                     <div class="section-content">
                         <div class="item">
-                            <b class="left-item">Software Development Co-op</b>
-                            <b class="right-item">Sep 2022 – Apr 2023</b>
-                            <br>
-                            <i class="left-item">Alida</i>
-                            <i class="right-item">Vancouver, BC</i>
-                            <ul>
-                                <li>
-                                    Will contribute to full-stack development, utilizing JavaScript UI frameworks,
-                                    databases,
-                                    and
-                                    AWS services.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <b class="left-item">Lead Tutorial Teaching Assistant, Models of Computation</b>
-                            <b class="right-item">Jan 2022 – Aug 2022</b>
+                            <b class="left-item">Bachelor of Computer Science</b>
+                            <b class="right-item">Sep 2021 – May 2024</b>
                             <br>
                             <i class="left-item">University of British Columbia</i>
                             <i class="right-item">Vancouver, BC</i>
-                            <ul>
-                                <li>
-                                    Solidified understanding of proofs, logic, and number representations by
-                                    facilitating
-                                    lab
-                                    and
-                                    office hour discussions
-                                </li>
-                                <li>
-                                    Summarized techniques clearly with walkthrough commentary and visual references,
-                                    yielding
-                                    positive student feedback.
-                                </li>
-                            </ul>
+                        </div>
+                        <div>
+                            <b class="left-item">BSc. Combined Biochemistry and Chemistry</b>
+                            <b class="right-item">Sep 2015 – May 2020</b>
+                            <br>
+                            <i class="left-item">University of British Columbia</i>
+                            <i class="right-item">Vancouver, BC</i>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </content>
 </div>
 <div id="footer">
-    <div id="footer-content">Design by me
+    <div id="footer-content">Website design by me
     </div>
 </div>
 </body>
