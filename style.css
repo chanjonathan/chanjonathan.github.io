@@ -106,17 +106,19 @@ hr {
 #nav-content-container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 1150px;
     overflow: auto;
 }
 
 content {
     float: right;
+    width: 850px;
 }
 
 #nav-bar {
     position: fixed;
     overflow: auto;
+    float: left;
     float: left;
     padding: 20px 20px 0px;
     top: 30%;
@@ -147,7 +149,6 @@ form {
 
 #header {
     margin-top: 30px;
-    width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -159,7 +160,6 @@ form {
 .section-panel {
     margin-left: auto;
     margin-right: auto;
-    width: 900px;
 }
 
 .section-panel * {
