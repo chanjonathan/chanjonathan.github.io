@@ -1,4 +1,26 @@
 /*font*/
+@font-face {
+    font-family: "Garamond";
+    src: url("fonts/GARA.TTF")
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url("fonts/GARABD.TTF");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url("fonts/GARAIT.TTF");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SimSun";
+    src: url("fonts/simsun.ttc");
+}
+
 * {
     font-family: Garamond, Georgia, serif;
     text-align: left;
