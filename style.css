@@ -260,7 +260,7 @@ form {
 }
 
 .gradient:hover {
-    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0), rgb(47, 47, 47));
+    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0), rgb(51, 51, 51));
 }
 
 .preview {
@@ -327,4 +327,8 @@ th {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+
+a:hover {
+    color: #444444;
 }
