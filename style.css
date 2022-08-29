@@ -69,6 +69,11 @@ ul {
     font-size: 100%;
 }
 
+#nav-bar a:hover {
+    color: #444444;
+    text-decoration: underline;
+}
+
 /*button*/
 .button * {
     font-size: 140%;
@@ -311,24 +316,3 @@ th {
     left: 0;
 }
 
-.collapsible {
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-}
-
-
-.collapsible-content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-a:hover {
-    color: #444444;
-}
