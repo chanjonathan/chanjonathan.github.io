@@ -30,7 +30,8 @@ function previewParallax() {
 
 function bodyParallax() {
     let body = document.getElementsByTagName("body")[0];
-    body.style.backgroundPositionY = (0.25 * window.scrollY / window.innerHeight) * 100 + "%";
+    body.style.backgroundPositionY = (window.scrollY / document.body.scrollHeight) * 100 + "%";
+    console.log(body.style.backgroundPositionY);
 }
 
 window.addEventListener("scroll", reveal);
