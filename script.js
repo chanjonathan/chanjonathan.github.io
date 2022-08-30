@@ -12,9 +12,9 @@ function reveal() {
     }
 }
 
-function parallax() {
+function previewParallax() {
     let windowHeight = window.innerHeight;
-    let parallaxes = document.getElementsByClassName('parallax');
+    let parallaxes = document.getElementsByClassName('preview-parallax');
     for (let i = 0; i < parallaxes.length; i++) {
         let top = parallaxes[i].getBoundingClientRect().top;
         let elementHeight = parallaxes[i].offsetHeight
@@ -28,9 +28,16 @@ function parallax() {
     }
 }
 
+function bodyParallax() {
+    let body = document.getElementsByTagName("body")[0];
+    body.style.backgroundPositionY = (0.1 * window.scrollY / window.innerHeight) * 100 + "%";
+}
+
 window.addEventListener("scroll", reveal);
-window.addEventListener('scroll', parallax);
+window.addEventListener('scroll', previewParallax);
+window.addEventListener('scroll', bodyParallax);
+
 
 reveal();
-parallax();
-
+previewParallax();
+bodyParallax();

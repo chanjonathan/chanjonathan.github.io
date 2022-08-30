@@ -370,10 +370,13 @@ th {
     left: 0;
 }
 
-.parallax {
-}
-
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url("images/test.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
