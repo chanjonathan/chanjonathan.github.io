@@ -376,7 +376,7 @@ html {
 
 body {
     background-image: url("images/test.svg");
-    background-position: center;
-    background-size: contain;
+    background-position: 30% center;
+    background-size: auto 30%;
     background-repeat: repeat-y;
 }
