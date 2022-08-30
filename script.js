@@ -18,10 +18,9 @@ function parallax() {
     for (let i = 0; i < parallaxes.length; i++) {
         let top = parallaxes[i].getBoundingClientRect().top;
         let elementHeight = parallaxes[i].offsetHeight
-        if (top >= 0
-            && top <= (windowHeight - elementHeight)) {
-            parallaxes[i].style.backgroundPositionY = 100 - (100 * (top) / (windowHeight - elementHeight)) + '%';
-        } else if (top < 0) {
+        if (top >= -elementHeight && top <= windowHeight) {
+            parallaxes[i].style.backgroundPositionY = 100 - (100 * (top + elementHeight) / (windowHeight + elementHeight)) + '%';
+        } else if (top < -elementHeight) {
             parallaxes[i].style.backgroundPositionY = "100%";
         } else {
             parallaxes[i].style.backgroundPositionY = "0%";
