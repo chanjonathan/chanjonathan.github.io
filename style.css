@@ -247,15 +247,19 @@ form {
     position: relative;
     opacity: 0;
 }
+
 .reveal.active {
     opacity: 1;
 }
+
 .active.fade-bottom {
     animation: fade-bottom 0.5s ease-in;
 }
+
 .active.fade-left {
     animation: fade-left 0.5s ease-in;
 }
+
 .active.fade-right {
     animation: fade-right 0.5s ease-in;
 }
@@ -270,6 +274,7 @@ form {
         opacity: 1;
     }
 }
+
 @keyframes fade-left {
     0% {
         transform: translateX(-100px);
@@ -280,6 +285,7 @@ form {
         opacity: 1;
     }
 }
+
 @keyframes fade-right {
     0% {
         transform: translateX(100px);
@@ -364,3 +370,5 @@ th {
     left: 0;
 }
 
+.parallax {
+}
