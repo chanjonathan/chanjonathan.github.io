@@ -29,15 +29,16 @@ function previewParallax() {
 }
 
 function bodyParallax() {
-    let body = document.getElementsByTagName("body")[0];
-    body.style.backgroundPositionY = (window.scrollY / document.body.scrollHeight) * 100 + "%";
-    console.log(body.style.backgroundPositionY);
+    let body = document.body;
+    body.style.backgroundPositionY = (window.scrollY / body.scrollHeight) * 100 + "%";
+    console.log(body.style.backgroundPositionY, window.scrollY, body.scrollHeight);
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener('scroll', previewParallax);
-window.addEventListener('scroll', bodyParallax);
-
+window.addEventListener('scroll', () => {
+    previewParallax();
+    bodyParallax()
+});
 
 reveal();
 previewParallax();
