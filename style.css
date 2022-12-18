@@ -69,7 +69,7 @@ ul {
     font-size: 100%;
 }
 
-#nav-bar, #nav-bar-top a:hover {
+#nav-bar a:hover, #nav-bar-top a:hover {
     color: #444444;
     text-decoration: underline;
 }
