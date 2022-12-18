@@ -69,7 +69,7 @@ ul {
     font-size: 100%;
 }
 
-#nav-bar a:hover {
+#nav-bar, #nav-bar-top a:hover {
     color: #444444;
     text-decoration: underline;
 }
@@ -145,7 +145,6 @@ content {
 #nav-bar {
     position: fixed;
     overflow: hidden;
-    float: left;
     float: left;
     padding: 20px 20px 0px;
     top: 30%;
@@ -410,13 +409,41 @@ body {
     }
 }
 
+#nav-bar-top {
+    display: none;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 50px;
+    padding-bottom:15px;
+    background-color: white;
+    z-Index: 2;
+    box-shadow: 0px 1px 10px black;
+}
+
+#nav-bar-top h3 {
+    display: inline-block;
+    font-size: 3vw;
+    margin: 1vw;
+}
+
 @media only screen
 and (max-device-width: 900px)
 and (orientation: portrait) {
     #nav-bar {
         display: none;
     }
+    #nav-bar-top {
+        display: unset;
+    }
     content {
         float: unset;
     }
+    #header {
+        margin-top: 130px;
+    }
+
 }
