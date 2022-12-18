@@ -379,4 +379,34 @@ body {
     background-position: bottom;
     background-size: contain;
     background-repeat: repeat-y;
+    overflow-x: hidden;
 }
+
+@media (max-aspect-ratio: 2/1) {
+    body {
+        background-size: 200vh
+  }
+}
+
+@media (max-width: 1500px) {
+    #nav-content-container {
+        width: 78%;
+    }
+}
+
+@media (max-width: 1425px) {
+    #nav-content-container {
+        width: 1085px;
+    }
+}
+
+@media (max-width: 1200px) {
+    content {
+        width: calc(100% - 220px);
+    }
+    #nav-content-container {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
