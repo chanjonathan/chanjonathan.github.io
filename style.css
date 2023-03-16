@@ -43,6 +43,11 @@ h2 {
     font-size: 120%;
 }
 
+i {
+    font-family: Times New Roman, Times, serif;
+    font-size: 90%;
+}
+
 
 a {
     text-decoration: none;
